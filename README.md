@@ -9,10 +9,15 @@ Dany Baillargeon
 ## Description du projet
 Travail pratique sur Docker : céation de conteneurs, réseau, volumes et image personnalisée.
 
+---
+
 ## Section 1 - étape 1
 ![Capture d'écran 1](images/image1.png)
 
+---
+
 ## Section 1 - étape 2
+```powershell
 docker compose version
 docker network create mon_reseau
 docker network ls
@@ -23,6 +28,7 @@ docker run -d --name mongodb --network mon_reseau - e MONGO_INITDB_ROOT_USERNAME
 docker ps
 docker network inspect mon_reseau
 docker logs apache
+```
 
 ![Capture d'écran 2](images/image2.png)
 
